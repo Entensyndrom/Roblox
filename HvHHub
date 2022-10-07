@@ -1,1 +1,17 @@
-ewe
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "Script by Ente";
+    Text = "More Scripts will be added soon!";
+})
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "Enjoy!";
+    Text = "";
+})
+
+local IdToUrl = {
+    [7346416636] = "https://raw.githubusercontent.com/Entensyndrom/RobloxScripts/main/PopITTrade",
+    [9898710720] = "https://raw.githubusercontent.com/Entensyndrom/RobloxScripts/main/MoneyTycoon"
+}
+
+if IdToUrl[game.PlaceId] then
+    loadstring(game:HttpGet(IdToUrl[game.PlaceId]))()
+end
